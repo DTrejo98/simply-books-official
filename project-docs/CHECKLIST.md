@@ -3,26 +3,26 @@
 ## DAY 1
 
 1. **Create a GitHub Project Board**: 
-    - [ ] Use the Kanban template.
-    - [ ] Set up columns: Backlog, Ready, Blocked, In Progress, Testing, Done.
+    - [X] Use the Kanban template.
+    - [X] Set up columns: Backlog, Ready, Blocked, In Progress, Testing, Done.
     - [ ] Create tickets for each task in the project (break down features, UI components, and CRUD operations into individual tasks).
 
 1. **Entity Relationship Diagram (ERD)**:
-    - [ ] Create an ERD to map out the relationships between books, authors, and users.
-    - [ ] Ensure all entities and relationships are clear and match Firebase’s data structure.
-    - [ ] Use tools like draw.io or Lucidchart for the ERD.
-    - [ ] If an ERD is provided, review it and ensure it fits the project needs.
+    - [X] Create an ERD to map out the relationships between books, authors, and users.
+    - [X] Ensure all entities and relationships are clear and match Firebase’s data structure.
+    - [X] Use tools like draw.io or Lucidchart for the ERD.
+    - [X] If an ERD is provided, review it and ensure it fits the project needs.
 
 1. **Project Setup**
-    - [ ] Initialize a new Next.js project.
-    - [ ] Organize the file structure for easy navigation (e.g., components, pages, utils, etc.).
-    - [ ] Install necessary dependencies (Firebase, etc.).
-    - [ ] Connect the app to Firebase (check for Google Authentication and real-time database).
+    - [X] Initialize a new Next.js project.
+    - [X] Organize the file structure for easy navigation (e.g., components, pages, utils, etc.).
+    - [X] Install necessary dependencies (Firebase, etc.).
+    - [X] Connect the app to Firebase (check for Google Authentication and real-time database).
 
 1. **Authentication**
-    - [ ] Set up Firebase Authentication for Google sign-in.
-    - [ ] Ensure authentication flow works and restrict data access based on logged-in users.
-    - [ ] Test sign-in and sign-out functionality thoroughly.
+    - [X] Set up Firebase Authentication for Google sign-in.
+    - [X] Ensure authentication flow works and restrict data access based on logged-in users.
+    - [X] Test sign-in and sign-out functionality thoroughly.
 
 1. **Routing & Navigation**
     - [ ] Set up dynamic routing in Next.js App Router (e.g., `/books/[id]`, `/authors/[id]`).
@@ -33,8 +33,8 @@
 ## DAY 2
 
 1. **Data Management & Fetching**
-    - [ ] Create a Firebase Realtime Database or Firestore to store data (or connect to an existing one).
-    - [ ] Fetch user-specific data from Firebase (books, authors, etc.).
+    - [X] Create a Firebase Realtime Database or Firestore to store data (or connect to an existing one).
+    - [X] Fetch user-specific data from Firebase (books, authors, etc.).
     - [ ] Use `useEffect` for data fetching and ensure data renders on component mount.
     - [ ] Test data retrieval and ensure no issues with Firebase queries.
 
@@ -113,4 +113,3 @@
     - [ ] Test CRUD operations for potential edge cases (e.g., deleting all items, editing invalid inputs).
     - [ ] Ensure navigation works as expected across routes.
     - [ ] Verify Google Authentication flow and access control.
-

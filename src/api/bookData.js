@@ -3,8 +3,9 @@ import { clientCredentials } from '../utils/client';
 
 const endpoint = clientCredentials.databaseURL;
 
-const getBooks = (uid) =>
-  new Promise((resolve, reject) => {
+// eslint-disable-next-line arrow-body-style
+const getBooks = (uid) => {
+  return new Promise((resolve, reject) => {
     fetch(`${endpoint}/books.json?orderBy="uid"&equalTo="${uid}"`, {
       method: 'GET',
       headers: {
@@ -12,9 +13,13 @@ const getBooks = (uid) =>
       },
     })
       .then((response) => response.json())
-      .then((data) => resolve(Object.values(data)))
+      .then((data) => {
+        console.log(data);
+        resolve(Object.values(data));
+      })
       .catch(reject);
   });
+};
 
 // TODO: DELETE BOOK
 const deleteBook = (firebaseKey) =>

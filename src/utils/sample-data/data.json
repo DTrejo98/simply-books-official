@@ -1,0 +1,170 @@
+{
+  "authors": 
+  {
+    "-MiBsfuTafbEQ7eAULxV" : {
+      "email" : "ta@ta.com",
+      "firebaseKey" : "-MiBsfuTafbEQ7eAULxV",
+      "first_name" : "Tomi",
+      "last_name" : "Adeyemi",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Tomi_Adeyemi_2020.JPG",
+      "favorite": true,
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    },
+    "-MiBt86VzkC-EGmJnxjm" : {
+      "email" : "ba@obama.com",
+      "firebaseKey" : "-MiBt86VzkC-EGmJnxjm",
+      "first_name" : "Barack",
+      "last_name" : "Obama",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg",
+      "favorite": true,
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    },
+    "-MiBtwf1BwN9pGavQeR3" : {
+      "email" : "hz@zinn.com",
+      "firebaseKey" : "-MiBtwf1BwN9pGavQeR3",
+      "first_name" : "Howard",
+      "last_name" : "Zinn",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Howard_Zinn%2C_2009_%28cropped%29.jpg",
+      "favorite": false,
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    },
+    "-MiBuOfHv9NCKB_cneij" : {
+      "email" : "at@thomas.com",
+      "firebaseKey" : "-MiBuOfHv9NCKB_cneij",
+      "first_name" : "Angie",
+      "last_name" : "Thomas",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Angie_thomas_9022008.jpg",
+      "favorite": false,
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    },
+    "-MiBulenBnY8by9Xn7q1" : {
+      "email" : "cw@whithead.com",
+      "firebaseKey" : "-MiBulenBnY8by9Xn7q1",
+      "first_name" : "Colson",
+      "last_name" : "Whitehead",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Colson_Whitehead_BBF_2011_Shankbone.JPG",
+      "favorite": false,
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    },
+    "-MiBv9_aOEJQWoobjz_U" : {
+      "email" : "mk@kendall.com",
+      "firebaseKey" : "-MiBv9_aOEJQWoobjz_U",
+      "first_name" : "Mikki",
+      "last_name" : "Kendall",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Author%2C_activist%2C_and_cultural_critic_Mikki_Kendall.jpg",
+      "favorite": true,
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    },
+    "-MiBvQiWr6XNwNa1i3-0" : {
+      "email" : "lm@lm.com",
+      "firebaseKey" : "-MiBvQiWr6XNwNa1i3-0",
+      "first_name" : "L.L",
+      "last_name" : "McKinney",
+      "image": "https://mpd-biblio-authors.imgix.net/200066919.jpg?fit=crop&crop=faces&w=870&h=870",
+      "favorite": true,
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    },
+    "-MiBw4tCvNZd23yTVDQw" : {
+      "email" : "jb@baldwin.com",
+      "firebaseKey" : "-MiBw4tCvNZd23yTVDQw",
+      "first_name" : "James",
+      "last_name" : "Baldwin",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/James_Baldwin_33_Allan_Warren.jpg",
+      "favorite": false,
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    }
+  },
+  "books": {
+    "-MiBsBKGWFEU-yluJkL-": {
+      "author_id": "-MiBt86VzkC-EGmJnxjm",
+      "firebaseKey": "-MiBsBKGWFEU-yluJkL-",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/91+NBrXG-PL.jpg",
+      "price": "24.99",
+      "description": "",
+      "sale": false,
+      "title": "A Promised Land",
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    },
+    "-MiBsknNSQ6aBG1-2lQS": {
+      "author_id": "-MiBsfuTafbEQ7eAULxV",
+      "firebaseKey": "-MiBsknNSQ6aBG1-2lQS",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/A1agLFsWkOL.jpg",
+      "price": "12.99",
+      "description": "",
+      "sale": true,
+      "title": "Children of Blood and Bone",
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    },
+    "-MiBuCve4-r_H-RLUOh2": {
+      "author_id": "-MiBtwf1BwN9pGavQeR3",
+      "firebaseKey": "-MiBuCve4-r_H-RLUOh2",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51529Lfc2ML.jpg",
+      "price": "30.00",
+      "description": "",
+      "sale": false,
+      "title": "A People's History of the United States of America",
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    },
+    "-MiBuU13EaKmGOMjJF-X": {
+      "author_id": "-MiBuOfHv9NCKB_cneij",
+      "firebaseKey": "-MiBuU13EaKmGOMjJF-X",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81rRRmZZvZL.jpg",
+      "price": "15.89",
+      "description": "",
+      "sale": false,
+      "title": "Concrete Rose",
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    },
+    "-MiBuqoYjFwbXyA8oiiw": {
+      "author_id": "-MiBulenBnY8by9Xn7q1",
+      "firebaseKey": "-MiBuqoYjFwbXyA8oiiw",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/A1Cu4ywUeyL.jpg",
+      "price": "25.00",
+      "description": "",
+      "sale": true,
+      "title": "The Underground Railroad",
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    },
+    "-MiBvEFJTI3FmTzDu_3V": {
+      "author_id": "-MiBv9_aOEJQWoobjz_U",
+      "firebaseKey": "-MiBvEFJTI3FmTzDu_3V",
+      "image": "https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_360,c_scale/jackets/9781526622402.jpg",
+      "price": "12.99",
+      "description": "",
+      "sale": true,
+      "title": "Hood Feminism",
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    },
+    "-MiBvW8ME_DvO2GzwQ8D": {
+      "author_id": "-MiBvQiWr6XNwNa1i3-0",
+      "firebaseKey": "-MiBvW8ME_DvO2GzwQ8D",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81Uf1dTjfQL.jpg",
+      "price": "15.00",
+      "description": "",
+      "sale": false,
+      "title": "A Blade So Black",
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    },
+    "-MiBvf3bIyooE6x4nLLB": {
+      "author_id": "-MiBvQiWr6XNwNa1i3-0",
+      "firebaseKey": "-MiBvf3bIyooE6x4nLLB",
+      "image": "https://m.media-amazon.com/images/I/51BZdlchEsL.jpg",
+      "price": "14.99",
+      "description": "",
+      "sale": false,
+      "title": "A Dream So Dark",
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    },
+    "-MiBwAF5wOY00AYJm7cR": {
+      "author_id": "-MiBw4tCvNZd23yTVDQw",
+      "firebaseKey": "-MiBwAF5wOY00AYJm7cR",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61GSqXVhhKL.jpg",
+      "price": "12.00",
+      "description": "",
+      "sale": false,
+      "title": "The Fire Next Time",
+      "uid": "FzrVjQhtjeUdAiwc4cSZYzThODU2"
+    }
+  }
+  
+}
