@@ -29,7 +29,7 @@ function AuthorCard({ authorObj, onUpdate }) {
           )}{' '}
         </p>
         {/* DYNAMIC LINK TO VIEW THE BOOK DETAILS  */}
-        <Link href={`/author/${authorObj.firebaseKey}`} passHref>
+        <Link href={`/author/view/${authorObj.firebaseKey}`} passHref>
           <Button variant="primary" className="m-2">
             VIEW
           </Button>
