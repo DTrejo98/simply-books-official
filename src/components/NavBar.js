@@ -15,10 +15,10 @@ export default function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             {/* CLOSE NAVBAR ON LINK SELECTION: https://stackoverflow.com/questions/72813635/collapse-on-select-react-bootstrap-navbar-with-nextjs-not-working */}
-            <Link className="nav-link" href="/">
+            <Link className="nav-link" href="/book">
               Books
             </Link>
-            <Link className="nav-link" href="/authors">
+            <Link className="nav-link" href="/author">
               Authors
             </Link>
           </Nav>

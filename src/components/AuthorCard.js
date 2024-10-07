@@ -9,6 +9,7 @@ import { deleteSingleAuthor } from '../api/authorData';
 
 function AuthorCard({ authorObj, onUpdate }) {
   const deleteThisAuthor = () => {
+    console.log('Author Object:', authorObj);
     if (window.confirm(`Delete ${authorObj.first_name} ${authorObj.last_name}?`)) {
       deleteSingleAuthor(authorObj.firebaseKey).then(() => onUpdate());
     }
@@ -22,19 +23,19 @@ function AuthorCard({ authorObj, onUpdate }) {
         <p className="card-text bold">
           {authorObj.favorite && (
             <span>
-              SALE
+              Favorite
               <br />
             </span>
           )}{' '}
         </p>
         {/* DYNAMIC LINK TO VIEW THE BOOK DETAILS  */}
-        <Link href={`/book/${authorObj.firebaseKey}`} passHref>
+        <Link href={`/author/${authorObj.firebaseKey}`} passHref>
           <Button variant="primary" className="m-2">
             VIEW
           </Button>
         </Link>
         {/* DYNAMIC LINK TO EDIT THE BOOK DETAILS  */}
-        <Link href={`/book/edit/${authorObj.firebaseKey}`} passHref>
+        <Link href={`/author/edit/${authorObj.firebaseKey}`} passHref>
           <Button variant="info">EDIT</Button>
         </Link>
         <Button variant="danger" onClick={deleteThisAuthor} className="m-2">
@@ -51,8 +52,9 @@ AuthorCard.propTypes = {
     first_name: PropTypes.string,
     last_name: PropTypes.string,
     favorite: PropTypes.bool,
-    price: PropTypes.string,
     firebaseKey: PropTypes.string,
   }).isRequired,
   onUpdate: PropTypes.func.isRequired,
 };
+
+export default AuthorCard;

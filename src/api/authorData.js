@@ -68,7 +68,7 @@ const deleteSingleAuthor = (firebaseKey) =>
 const updateAuthor = (payload) =>
   new Promise((resolve, reject) => {
     fetch(`${endpoint}/authors/${payload.firebaseKey}.json`, {
-      method: 'Patch',
+      method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
       },
