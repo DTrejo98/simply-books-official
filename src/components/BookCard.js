@@ -31,7 +31,7 @@ function BookCard({ bookObj, onUpdate }) {
           ${bookObj.price}
         </p>
         {/* DYNAMIC LINK TO VIEW THE BOOK DETAILS  */}
-        <Link href={`/book/${bookObj.firebaseKey}`} passHref>
+        <Link href={`/book/view/${bookObj.firebaseKey}`} passHref>
           <Button variant="primary" className="m-2">
             VIEW
           </Button>

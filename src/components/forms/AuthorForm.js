@@ -2,7 +2,7 @@
 
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import PropTypes from 'prop-types';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
@@ -25,6 +25,12 @@ function AuthorForm({ obj = initialState }) {
   const router = useRouter();
   const { user } = useAuth();
 
+  useEffect(() => {
+    if (obj.firebaseKey) {
+      setFormInput(obj); // Ensure obj has the necessary data
+    }
+  }, [obj]);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormInput((prevState) => ({
@@ -36,7 +42,8 @@ function AuthorForm({ obj = initialState }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (obj.firebaseKey) {
-      updateAuthor(formInput).then(() => router.push(`/author/${obj.firebaseKey}`));
+      console.log('Updating author with data:', formInput);
+      updateAuthor(formInput).then(() => router.push(`/author/`));
     } else {
       const payload = { ...formInput, uid: user.uid };
       createAuthor(payload).then(({ name }) => {
@@ -72,12 +79,21 @@ function AuthorForm({ obj = initialState }) {
         <Form.Control type="url" placeholder="Enter an image url" name="image" value={formInput.image} onChange={handleChange} required />
       </FloatingLabel>
 
-      {/* AUTHOR SELECT  */}
-      <FloatingLabel controlId="floatingSelect" label="Favorite">
-        <Form.Select aria-label="Favorite" name="favorite" onChange={handleChange} className="mb-3" value={formInput.favorite}>
-          <option value="">Favorite!</option>
-        </Form.Select>
-      </FloatingLabel>
+      {/* A WAY TO HANDLE UPDATES FOR TOGGLES, RADIOS, ETC  */}
+      <Form.Check
+        className="text-white mb-3"
+        type="switch"
+        id="favorite"
+        name="favorite"
+        label="Favorite?"
+        checked={formInput.favorite}
+        onChange={(e) => {
+          setFormInput((prevState) => ({
+            ...prevState,
+            sale: e.target.checked,
+          }));
+        }}
+      />
 
       {/* SUBMIT BUTTON  */}
       <Button type="submit">{obj.firebaseKey ? 'Update' : 'Create'} Author</Button>
