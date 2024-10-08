@@ -9,22 +9,17 @@ import BookCard from '@/components/BookCard';
 export default function ViewAuthor({ params }) {
   const [authorDetails, setAuthorDetails] = useState({});
   const [books, setBooks] = useState([]);
-  // grab firebaseKey from url
   const { firebaseKey } = params;
 
-  // make call to API layer to get the data
   useEffect(() => {
     viewAuthorDetails(firebaseKey).then(setAuthorDetails);
-    // console.log(viewAuthorDetails(firebaseKey));
     getAuthorBooks(firebaseKey).then(setBooks);
-    // console.log(getAuthorBooks(firebaseKey));
     console.log(getAuthorBooks(firebaseKey));
   }, [firebaseKey]);
 
   const showAuthorDetails = () => {
     getAuthorBooks(firebaseKey).then(setBooks);
     console.log(getAuthorBooks(firebaseKey));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   };
 
   return (
