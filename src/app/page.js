@@ -4,7 +4,7 @@
 
 import React from 'react';
 
-export default function Hpme() {
+export default function Home() {
   return (
     <div className="container">
       <h2>Welcome to Simply Books!</h2>

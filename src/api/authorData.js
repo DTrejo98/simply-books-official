@@ -1,7 +1,9 @@
 import { clientCredentials } from '../utils/client';
+// API CALLS FOR AUTHORS
 
 const endpoint = clientCredentials.databaseURL;
 
+// FIXME:  GET ALL AUTHORS
 const getAuthors = (uid) =>
   new Promise((resolve, reject) => {
     fetch(`${endpoint}/authors.json?orderBy="uid"&equalTo="${uid}"`, {
@@ -25,7 +27,7 @@ const getAuthors = (uid) =>
 const createAuthor = (payload) =>
   new Promise((resolve, reject) => {
     fetch(`${endpoint}/authors.json`, {
-      method: 'Post',
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
@@ -80,8 +82,20 @@ const updateAuthor = (payload) =>
   });
 
 // TODO: GET A SINGLE AUTHOR'S BOOKS
-const getAuthorBooks = () => {};
+const getAuthorBooks = (firebaseKey) =>
+  new Promise((resolve, reject) => {
+    fetch(`${endpoint}/books.json?orderBy="author_id"&equalTo="${firebaseKey}"`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => resolve(data))
+      .catch(reject);
+  });
 
+// TODO: FILTER A FAVORITE AUTHOR'S BOOKS
 const favoriteAuthors = (uid) =>
   new Promise((resolve, reject) => {
     fetch(`${endpoint}/authors.json?orderBy="uid"&equalTo="${uid}"`, {
@@ -92,8 +106,8 @@ const favoriteAuthors = (uid) =>
     })
       .then((response) => response.json())
       .then((data) => {
-        const favorites = Object.values(data).filter((item) => item.favorite);
-        resolve(favorites);
+        const favoriteAuthor = Object.values(data).filter((item) => item.favorite);
+        resolve(favoriteAuthor);
       })
       .catch(reject);
   });
